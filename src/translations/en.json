@@ -700,7 +700,7 @@
 
   "Footer.toHelpPage": "Help",
 
-  "Footer.toNewListingPage": "Become a teacher",
+  "Footer.toNewListingPage": "Become a tutor",
 
   "ImageCarousel.imageAltText": "Listing image {index}/{count}",
 
@@ -834,7 +834,7 @@
 
   "LocationAutocompleteInput.currentLocation": "Current location",
 
-  "LocationSearchForm.placeholder": "Search yoga teachers...",
+  "LocationSearchForm.placeholder": "Search  tutors...",
 
   "LoginForm.emailInvalid": "A valid email address is required",
 
@@ -942,9 +942,9 @@
 
   "NotFoundPage.title": "Page not found",
 
-  "OwnListingLink.addYourListingLink": "Become a teacher",
+  "OwnListingLink.addYourListingLink": "Become a tutor",
 
-  "OwnListingLink.editYourListingLink": "Edit teacher profile",
+  "OwnListingLink.editYourListingLink": "Edit tutor profile",
 
   "Page.schemaDescription": "Book private yoga lessons using Yogatime or earn some income teaching yoga",
 
@@ -1140,7 +1140,7 @@
 
   "PayoutDetailsForm.cityLabel": "City",
 
-  "PayoutDetailsForm.cityPlaceholder": "New York City",
+  "PayoutDetailsForm.cityPlaceholder": "University of Sydney",
 
   "PayoutDetailsForm.cityRequired": "This field is required",
 
@@ -1402,7 +1402,7 @@
 
   "ProfilePage.editProfileLinkMobile": "Edit",
 
-  "ProfilePage.listingsTitle": "My teacher profile ({count})",
+  "ProfilePage.listingsTitle": "My tutor profile ({count})",
 
   "ProfilePage.loadingDataFailed": "Whoops, something went wrong. Please try again.",
 
@@ -1410,7 +1410,7 @@
 
   "ProfilePage.mobileHeading": "{name}",
 
-  "ProfilePage.reviewsOfCustomerTitle": "Reviews from Teachers ({count})",
+  "ProfilePage.reviewsOfCustomerTitle": "Reviews from tutors ({count})",
 
   "ProfilePage.reviewsOfProviderTitle": "Reviews from Practicioners ({count})",
 
@@ -1514,7 +1514,7 @@
 
   "SearchFiltersMobile.foundResults": "{count, number} {count, plural, one {result} other {results}}",
 
-  "SearchFiltersMobile.heading": "Filter teachers",
+  "SearchFiltersMobile.heading": "Filter tutors",
 
   "SearchFiltersMobile.loadingResults": "Loading…",
 
@@ -1532,7 +1532,7 @@
 
   "SearchFiltersPrimary.moreFiltersButton": "{count, plural, =0 {More filters} other {More filters • #}}",
 
-  "SearchFiltersPrimary.noResults": "Could not find any teachers.",
+  "SearchFiltersPrimary.noResults": "Could not find any tutors.",
 
   "SearchFiltersSecondary.apply": "Apply",
 
@@ -1554,7 +1554,7 @@
 
   "SearchResultsPanel.previousPage": "Previous page",
 
-  "SectionHero.browseButton": "Browse teachers",
+  "SectionHero.browseButton": "Browse tutors",
 
   "SectionHero.subTitle": "The most effective university tutoroing platform.",
 
@@ -1764,7 +1764,7 @@
 
   "StripePaymentAddress.cityLabel": "City",
 
-  "StripePaymentAddress.cityPlaceholder": "New York City",
+  "StripePaymentAddress.cityPlaceholder": "University of Sydney",
 
   "StripePaymentAddress.cityRequired": "City is required",
 
@@ -1992,7 +1992,7 @@
 
   "Topbar.menuIcon": "Open menu",
 
-  "Topbar.mobileSearchHelp": "Tip: You can also search teachers by zip code, for example \"10012\" or city district – \"Manhattan\".",
+  "Topbar.mobileSearchHelp": "Tip: You can also search tutors by zip code, for example \"10012\" or city district – \"Manhattan\".",
 
   "Topbar.searchIcon": "Open search",
 
@@ -2000,7 +2000,7 @@
 
   "TopbarDesktop.createListing": "Become a tutor",
 
-  "TopbarDesktop.addYourListingLink": "Become a teacher",
+  "TopbarDesktop.addYourListingLink": "Become a tutor",
 
   "TopbarDesktop.editYourListingLink": "Edit teacher profile",
 
@@ -2028,7 +2028,7 @@
 
   "TopbarMobileMenu.logoutLink": "Log out",
 
-  "TopbarMobileMenu.newListingLink": "Become a teacher",
+  "TopbarMobileMenu.newListingLink": "Become a tutor",
 
   "TopbarMobileMenu.profileSettingsLink": "User profile",
 
@@ -2042,7 +2042,7 @@
 
   "TopbarSearchForm.placeholder": "Search tutors…",
 
-  "TopbarSearchForm.searchHelp": "Tip: You can also search teachers by zip code, for example \"10012\" or city district \"Manhattan\".",
+  "TopbarSearchForm.searchHelp": "Tip: You can also search tutors by zip code, for example \"10012\" or city district \"Manhattan\".",
 
   "TransactionPage.deletedListing": "deleted teacher profile",
 
