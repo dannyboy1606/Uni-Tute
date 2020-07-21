@@ -34,7 +34,28 @@
  */
 
 export const filters = [
-  {
+{
+    id: 'certificate',
+    label: 'University',
+    type: 'SelectSingleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_certificate'],
+    config: {
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'none', label: 'None', hideFromFilters: true, hideFromListingInfo: true },
+        { key: 'university of sydney', label: 'University of Sydney' },
+        { key: 'university of technology sydney', label: 'University of Technology Sydney' },
+        { key: 'university of new south whales', label: 'University of New South Whales' },
+        { key: 'australian catholic university', label: 'Australian Catholic University' },
+        { key: 'macquarie university', label: 'Macquarie University' },
+      ],
+    },
+  },
+   {
     id: 'dates-length',
     label: 'Dates',
     type: 'BookingDateRangeLengthFilter',
@@ -62,6 +83,7 @@ export const filters = [
       ],
     },
   },
+
   {
     id: 'price',
     label: 'Price',
@@ -74,8 +96,40 @@ export const filters = [
     // Note: unlike most prices this is not handled in subunits
     config: {
       min: 0,
-      max: 1000,
+      max: 200,
       step: 5,
+    },
+  },
+ {
+    id: 'rating',
+    label: 'Rating',
+    type: 'PriceFilter',
+    group: 'primary',
+    // Note: PriceFilter is fixed filter,
+    // you can't change "queryParamNames: ['price'],"
+    queryParamNames: ['price'],
+    // Price filter configuration
+    // Note: unlike most prices this is not handled in subunits
+    config: {
+      min: 0,
+      max: 5,
+      step: 1,
+    },
+  },
+ {
+    id: 'distance',
+    label: 'Distance',
+    type: 'PriceFilter',
+    group: 'primary',
+    // Note: PriceFilter is fixed filter,
+    // you can't change "queryParamNames: ['price'],"
+    queryParamNames: ['price'],
+    // Price filter configuration
+    // Note: unlike most prices this is not handled in subunits
+    config: {
+      min: 0,
+      max: 100,
+      step: 2,
     },
   },
   {
@@ -93,7 +147,7 @@ export const filters = [
   },
   {
     id: 'yogaStyles',
-    label: 'Yoga styles',
+    label: 'Days Avaiable',
     type: 'SelectMultipleFilter',
     group: 'secondary',
     queryParamNames: ['pub_yogaStyles'],
@@ -107,18 +161,19 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'ashtanga', label: 'Ashtanga' },
-        { key: 'hatha', label: 'Hatha' },
-        { key: 'kundalini', label: 'Kundalini' },
-        { key: 'restorative', label: 'Restorative' },
-        { key: 'vinyasa', label: 'Vinyasa' },
-        { key: 'yin', label: 'Yin' },
+        { key: 'monday', label: 'Monday' },
+        { key: 'tuesday', label: 'Tuesday' },
+        { key: 'wednesday', label: 'Wednesday' },
+        { key: 'thursday', label: 'Thursday' },
+        { key: 'friday', label: 'Friday' },
+        { key: 'saturday', label: 'Saturday' },
+        { key: 'sunday', label: 'Sunday' },
       ],
     },
   },
   {
     id: 'certificate',
-    label: 'Certificate',
+    label: 'Gender',
     type: 'SelectSingleFilter',
     group: 'secondary',
     queryParamNames: ['pub_certificate'],
@@ -128,9 +183,9 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'none', label: 'None', hideFromFilters: true, hideFromListingInfo: true },
-        { key: '200h', label: 'Registered yoga teacher 200h' },
-        { key: '500h', label: 'Registered yoga teacher 500h' },
+        // { key: 'none', label: 'None', hideFromFilters: true, hideFromListingInfo: true },
+        { key: 'male', label: 'Male' },
+        { key: 'female', label: 'Female' },
       ],
     },
   },
@@ -152,8 +207,8 @@ export const sortConfig = {
   conflictingFilters: ['keyword'],
 
   options: [
-    { key: 'createdAt', label: 'Newest' },
-    { key: '-createdAt', label: 'Oldest' },
+    { key: 'createdAt', label: 'Highest Rating' },
+    { key: '-createdAt', label: 'Distance' },
     { key: '-price', label: 'Lowest price' },
     { key: 'price', label: 'Highest price' },
 
