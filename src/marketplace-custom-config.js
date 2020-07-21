@@ -100,38 +100,8 @@ export const filters = [
       step: 5,
     },
   },
- {
-    id: 'rating',
-    label: 'Rating',
-    type: 'PriceFilter',
-    group: 'primary',
-    // Note: PriceFilter is fixed filter,
-    // you can't change "queryParamNames: ['price'],"
-    queryParamNames: ['price'],
-    // Price filter configuration
-    // Note: unlike most prices this is not handled in subunits
-    config: {
-      min: 0,
-      max: 5,
-      step: 1,
-    },
-  },
- {
-    id: 'distance',
-    label: 'Distance',
-    type: 'PriceFilter',
-    group: 'primary',
-    // Note: PriceFilter is fixed filter,
-    // you can't change "queryParamNames: ['price'],"
-    queryParamNames: ['price'],
-    // Price filter configuration
-    // Note: unlike most prices this is not handled in subunits
-    config: {
-      min: 0,
-      max: 100,
-      step: 2,
-    },
-  },
+
+ 
   {
     id: 'keyword',
     label: 'Keyword',
