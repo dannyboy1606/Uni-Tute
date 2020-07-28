@@ -35,11 +35,11 @@
 
 export const filters = [
 {
-    id: 'certificate',
+    id: 'university',
     label: 'University',
     type: 'SelectSingleFilter',
     group: 'primary',
-    queryParamNames: ['pub_certificate'],
+    queryParamNames: ['pub_university'],
     config: {
       // "key" is the option you see in Flex Console.
       // "label" is set here for the UI only.
@@ -55,6 +55,8 @@ export const filters = [
       ],
     },
   },
+
+
    {
     id: 'dates-length',
     label: 'Dates',
@@ -100,27 +102,13 @@ export const filters = [
       step: 5,
     },
   },
-
- 
+  
   {
-    id: 'keyword',
-    label: 'Keyword',
-    type: 'KeywordFilter',
-    group: 'primary',
-    // Note: KeywordFilter is fixed filter,
-    // you can't change "queryParamNames: ['keywords'],"
-    queryParamNames: ['keywords'],
-    // NOTE: If you are ordering search results by distance
-    // the keyword search can't be used at the same time.
-    // You can turn on/off ordering by distance from config.js file.
-    config: {},
-  },
-  {
-    id: 'yogaStyles',
-    label: 'Days Avaiable',
+    id: 'days_available',
+    label: 'Days Available',
     type: 'SelectMultipleFilter',
-    group: 'secondary',
-    queryParamNames: ['pub_yogaStyles'],
+    group: 'primary',
+    queryParamNames: ['pub_daysAvailable'],
     config: {
       // Optional modes: 'has_all', 'has_any'
       // https://www.sharetribe.com/api-reference/marketplace.html#extended-data-filtering
@@ -142,11 +130,11 @@ export const filters = [
     },
   },
   {
-    id: 'certificate',
+    id: 'gender',
     label: 'Gender',
     type: 'SelectSingleFilter',
-    group: 'secondary',
-    queryParamNames: ['pub_certificate'],
+    group: 'primary',
+    queryParamNames: ['pub_gender'],
     config: {
       // "key" is the option you see in Flex Console.
       // "label" is set here for the UI only.
@@ -158,6 +146,20 @@ export const filters = [
         { key: 'female', label: 'Female' },
       ],
     },
+  },
+
+{
+    id: 'keyword',
+    label: 'Keyword',
+    type: 'KeywordFilter',
+    group: 'primary',
+    // Note: KeywordFilter is fixed filter,
+    // you can't change "queryParamNames: ['keywords'],"
+    queryParamNames: ['keywords'],
+    // NOTE: If you are ordering search results by distance
+    // the keyword search can't be used at the same time.
+    // You can turn on/off ordering by distance from config.js file.
+    config: {},
   },
 ];
 
